@@ -16,7 +16,7 @@ void exercise_3(int a, int b) {
   // TODO: YOUR CODE HER
   if (a>b) {
     cout << a/b << endl;}
-    else if (a=0) {
+    else if (a==0) {
       cout << "Impossible" << endl;}
       else if (a<b) {
         cout << "0" << endl;
