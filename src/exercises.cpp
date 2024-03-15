@@ -14,11 +14,11 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HER
-  if (a>b){
+  if (a>b) {
     cout << a/b << endl;}
-    else if (a=0){
+    else if (a=0) {
       cout << "Impossible" << endl;}
-      else (a<b){
+      else if (a<b) {
         cout << "0" << endl;
       }
     
