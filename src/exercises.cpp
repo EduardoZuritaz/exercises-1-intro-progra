@@ -111,4 +111,49 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
+  int main() {
+    int horaInicio, horaFin;
+    cout << "Ingrese la hora de inicio del alquiler: ";
+    cin >> horaInicio;
+    cout << "Ingrese la hora de fin del alquiler: ";
+    cin >> horaFin;
+    
+    if (horaInicio < 0 || horaInicio > 24 || horaFin < 0 || horaFin > 24) {
+        cout << "Las horas deben estar entre 0 y 24!" << endl;
+        return 0;
+    }
+    
+    if (horaInicio == horaFin) {
+        cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+        return 0;
+    }
+    
+    if (horaInicio > horaFin) {
+        cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+        return 0;
+    }
+    
+    int horasTarifa1 = 0, horasTarifa2 = 0;
+    int costoTotal = 0;
+    
+    // Calcular horas en cada tarifa
+    for (int i = horaInicio; i < horaFin; ++i) {
+        if ((i >= 0 && i < 7) || (i >= 17 && i < 24)) {
+            horasTarifa1++;
+        } else {
+            horasTarifa2++;
+        }
+    }
+    
+    // Calcular costo total
+    costoTotal = horasTarifa1 + 2 * horasTarifa2;
+    
+    // Mostrar resultados
+    cout << "Has alquilado una bicicleta por" << endl;
+    cout << horasTarifa1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+    cout << horasTarifa2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+    cout << "El monto total a pagar es de " << costoTotal << " boliviano(s)." << endl;
+    
+    return 0;
+}
 }
