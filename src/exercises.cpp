@@ -1,6 +1,8 @@
 
 #include <cmath>
 #include <iostream>
+#include <sstream>
+#include <string>
 
 using namespace std;
 
@@ -88,7 +90,7 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
         first_chars += word[0];
     }
 
-    if (input[0] == input[input.length()-1]) {
+    if (input[0] == input[input.length() - 1]) {
         cout << first_chars << endl;
         cout << "Hemos encontrado algo!";
     } else {
