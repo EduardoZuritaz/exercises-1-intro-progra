@@ -136,7 +136,6 @@ string exercise_14(int number_of_docs) {
   else if (number_of_docs > 1){
     return to_string (number_of_docs) + "Documentos encontrados";
   }
-  return "";
 }
 
 void exercise_15(int a, int b, int c) {
