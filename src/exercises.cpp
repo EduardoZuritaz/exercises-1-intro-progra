@@ -88,7 +88,33 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
-
+      switch(number == 1){
+        cout << "Monday" << endl;
+      }
+      switch(number == 2){
+        cout << "Tuesday" << endl;
+      }
+      switch(number == 3){
+        cout << "Wednesday" << endl;
+      }
+      switch(number == 4){
+        cout << "Thursday" << endl;
+      }
+      switch(number == 5){
+        cout << "Friday" << endl;
+      }
+      switch(number == 6){
+        cout << "Saturday" << endl;
+      }
+      switch(number == 7){
+        cout << "Sunday" << endl;
+      }
+      switch(number > 7){
+        cout << "Invalid input" << endl;
+      }
+      switch(number < 1){
+        cout << "Invalid input" << endl;
+      }
 }
 
 void exercise_7(double r) {
