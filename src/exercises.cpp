@@ -88,6 +88,7 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
+
 }
 
 void exercise_7(double r) {
@@ -126,6 +127,16 @@ string exercise_13(int age, int years_of_experience) {
 
 string exercise_14(int number_of_docs) {
   // TODO: YOUR CODE HERE
+  cin >> number_of_docs;
+  if(number_of_docs == 0){
+    cout << "No se encontro nigun documento" << endl;
+  }
+  else if (number_of_docs == 1) {
+    cout << "Se encontro un documento" << endl;
+  }
+  else{
+    cout << number_of_docs << "Documentos encontrados" << endl;
+  }
   return "";
 }
 
