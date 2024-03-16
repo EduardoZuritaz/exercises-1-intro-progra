@@ -17,6 +17,15 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
+  double discr== B*B - 4*A*C;
+  if (discr > 0) {
+    double root1 = (-B + sqrt(discr)) / (2*A);
+    double root2 = (-B - sqrt(discr)) / (2*A);
+    cout << root1 << " " << root2 << endl;
+  } else if (discr == 0) {
+    double root = -B / (2*A);
+    cout << root << endl
+  }
 }
 
 void exercise_3(int a, int b) {
