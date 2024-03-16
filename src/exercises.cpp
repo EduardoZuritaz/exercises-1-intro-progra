@@ -1,8 +1,6 @@
 
 #include <cmath>
 #include <iostream>
-#include <sstream>
-#include <string>
 
 using namespace std;
 
@@ -78,25 +76,6 @@ void exercise_8(long int seconds) {
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-  string input;
-    cout << "Ingrese cinco palabras separadas por un espacio: ";
-    getline(cin, input);
-    
-    istringstream iss(input);
-    string word;
-    string first_chars;
-
-    while (iss >> word) {
-        first_chars += word[0];
-    }
-
-    if (input[0] == input[input.length() - 1]) {
-        cout << first_chars << endl;
-        cout << "Hemos encontrado algo!";
-    } else {
-        cout << first_chars << endl;
-        cout << "Aun sin suerte";
-    }
   return "";
 }
 
