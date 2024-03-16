@@ -96,9 +96,9 @@ void exercise_12(string color1, int numb1,
   struct House {
     string color;
     int floors;
-};
+  };
 
-int main() {
+ int main {
     House houses[3];
 
     for (int i = 0; i < 3; ++i) {
