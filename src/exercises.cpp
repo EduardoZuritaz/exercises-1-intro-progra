@@ -93,42 +93,6 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
-  struct House {
-    string color;
-    int floors;
-  };
-
- int main {
-    House houses[3];
-
-    for (int i = 0; i < 3; ++i) {
-        cin >> houses[i].color >> houses[i].floors;
-    }
-
-    string witness_color;
-    int witness_floors;
-    cin >> witness_color;
-    if (witness_color != "?") {
-        cin >> witness_floors;
-    } else {
-        witness_floors = -1;
-    }
-
-    int to_visit[3];
-    int count = 0;
-    for (int i = 0; i < 3; ++i) {
-        if ((witness_color == "?" || houses[i].color == witness_color) &&
-            (witness_floors == -1 || houses[i].floors == witness_floors)) {
-            to_visit[count++] = i + 1;
-        }
-    }
-
-    for (int i = 0; i < count; ++i) {
-        cout << to_visit[i] << endl;
-    }
-
-    return 0;
-}
 }
 
 string exercise_13(int age, int years_of_experience) {
