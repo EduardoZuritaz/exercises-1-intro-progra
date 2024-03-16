@@ -52,7 +52,7 @@ void exercise_3(int a, int b) {
  else {
    cout << a/b << endl; 
  }
- }
+}
 
 void exercise_4(double n, double a, double b, double x, double y) {
   // TODO: YOUR CODE HERE
@@ -74,6 +74,16 @@ void exercise_4(double n, double a, double b, double x, double y) {
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
+  int res = character;
+  if (res >= 97 && res < 123){
+    cout << "lower-case alphabet" << endl;
+  }
+  else if (res >= 65 && res < 91){
+    cout << "upper-case alphabet" << endl;
+  }
+  else{
+    cout << "not an alphabet" << endl;
+  }
 }
 
 void exercise_6(int number) {
@@ -125,45 +135,4 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
-    int horaInicio, horaFin;
-    cout << "Ingrese la hora de inicio del alquiler: ";
-    cin >> horaInicio;
-    cout << "Ingrese la hora de fin del alquiler: ";
-    cin >> horaFin;
-    
-    if (horaInicio < 0 || horaInicio > 24 || horaFin < 0 || horaFin > 24) {
-        cout << "Las horas deben estar entre 0 y 24!" << endl;
-        return ;
-    }
-    
-    if (horaInicio == horaFin) {
-        cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
-        return ;
-    }
-    
-    if (horaInicio > horaFin) {
-        cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
-        return ;
-    }
-    
-    int horasTarifa1 = 0, horasTarifa2 = 0;
-    int costoTotal = 0;
-    
-    for (int i = horaInicio; i < horaFin; ++i) {
-        if ((i >= 0 && i < 7) || (i >= 17 && i < 24)) {
-            horasTarifa1++;
-        } else {
-            horasTarifa2++;
-        }
-    }
-    
-    costoTotal = horasTarifa1 + 2 * horasTarifa2;
-    
-    cout << "Has alquilado una bicicleta por" << endl;
-    cout << horasTarifa1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
-    cout << horasTarifa2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
-    cout << "El monto total a pagar es de " << costoTotal << " boliviano(s)." << endl;
-    
-    return ;
-
 }
