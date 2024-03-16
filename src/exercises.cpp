@@ -111,7 +111,6 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
-  int main() {
     int horaInicio, horaFin;
     cout << "Ingrese la hora de inicio del alquiler: ";
     cin >> horaInicio;
@@ -155,5 +154,5 @@ void exercise_16(int debut, int fin) {
     cout << "El monto total a pagar es de " << costoTotal << " boliviano(s)." << endl;
     
     return 0;
-}
+
 }
