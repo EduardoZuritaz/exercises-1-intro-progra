@@ -159,12 +159,23 @@ void exercise_8(long int seconds) {
   else{
     cout << h << ":" << m << ":" << seconds << endl;
   }
-}
+ }
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-  return "";
+  char caracter1 = s1[0];
+  char caracter2 = s2[0];
+  char caracter3 = s3[0];
+  char caracter4 = s4[0];
+  char caracter5 = s5[0];
+  cout << s1 << s2 <<s3 << s4 << s5 << endl;
+  if ( s1 == s2) {
+    result "Hemos encontrado algo";
+  }
+  else {
+  }
+  return "Aun sin suerte";
 }
 
 int exercise_10(int a, int b) {
