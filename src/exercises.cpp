@@ -138,23 +138,23 @@ void exercise_8(long int seconds) {
   seconds = seconds%3600;
   m = seconds/60;
   seconds = seconds%60;
-    if(h < 10 && m < 10 && seconds < 10) {
-      cout << "0" << h << ":" << "0" << m << ":" << "0" << seconds << endl;
+  if(h < 10 && m < 10 && seconds < 10) {
+    cout << "0" << h << ":" << "0" << m << ":" << "0" << seconds << endl;
   }
   else if(h < 10 && m >= 10 && seconds >= 10) {
-      cout << "0" << h << ":" << m << ":" << seconds << endl;
+    cout << "0" << h << ":" << m << ":" << seconds << endl;
   }
   else if(h < 10 && m >= 10 && seconds < 10) {
-      cout << "0" << h << ":" << m << ":" << "0" << seconds << endl;
+    cout << "0" << h << ":" << m << ":" << "0" << seconds << endl;
   }
   else if(h < 10 && m < 10 && seconds >= 10) {
-      cout << "0" << h << ":" << "0" << m << ":" << seconds << endl;
+    cout << "0" << h << ":" << "0" << m << ":" << seconds << endl;
   }
   else if(h >= 10 && m < 10 && seconds < 10) {
-      cout << h << ":" << "0" << m << ":" << "0" << seconds << endl;
+    cout << h << ":" << "0" << m << ":" << "0" << seconds << endl;
   }
   else if(h >= 10 && m >= 10 && seconds < 10) {
-      cout << h << ":" << m << ":" << "0" << seconds << endl;
+    cout << h << ":" << m << ":" << "0" << seconds << endl;
   }
   else{
     cout << h << ":" << m << ":" << seconds << endl;
@@ -169,13 +169,13 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   char caracter3 = s3[0];
   char caracter4 = s4[0];
   char caracter5 = s5[0];
-  cout << s1 << s2 <<s3 << s4 << s5 << endl;
-  if ( s1 == s2) {
-    result "Hemos encontrado algo";
+  cout << caracter1 << caracter2 << caracter3 << caracter4 << caracter5 << endl;
+  if ( caracter1 == caracter5) {
+    return "Hemos encontrado algo!";
   }
   else {
+    return"Aun sin suerte";
   }
-  return "Aun sin suerte";
 }
 
 int exercise_10(int a, int b) {
