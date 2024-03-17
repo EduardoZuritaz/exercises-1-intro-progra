@@ -88,25 +88,25 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
-if(a == 1){
+if(number == 1){
  cout << "Monday" << endl;
 }
-else if(a== 2){
+else if(number == 2){
    cout << "Tuesday" << endl;
 }
-else if(a== 3) {
+else if(number == 3) {
    cout << "Wednesday" << endl;
 }
-else if(a== 4) {
+else if(number == 4) {
    cout << "Thursday"<< endl;
 }
-else if(a== 5){
+else if(number == 5){
    cout << "Friday" << endl;
 }
-else if(a== 6){
+else if(number == 6){
    cout << "Saturday" << endl;
 }
-else if(a== 7){
+else if(number == 7){
    cout << "Sunday" << endl;
 }
 else{
