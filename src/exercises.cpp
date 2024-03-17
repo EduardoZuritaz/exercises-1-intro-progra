@@ -88,31 +88,31 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
-if(number == 1){
- cout << "Monday" << endl;
-}
-else if(number == 2){
-   cout << "Tuesday" << endl;
-}
-else if(number == 3) {
-   cout << "Wednesday" << endl;
-}
-else if(number == 4) {
-   cout << "Thursday"<< endl;
-}
-else if(number == 5){
-   cout << "Friday" << endl;
-}
-else if(number == 6){
-   cout << "Saturday" << endl;
-}
-else if(number == 7){
-   cout << "Sunday" << endl;
-}
-else{
-    cout << "Invalid input" << endl;
-}
-}
+ if(number == 1){
+  cout << "Monday" << endl;
+ }
+ else if(number == 2){
+    cout << "Tuesday" << endl;
+ }
+ else if(number == 3) {
+    cout << "Wednesday" << endl;
+ }
+ else if(number == 4) {
+    cout << "Thursday"<< endl;
+ }
+ else if(number == 5){
+    cout << "Friday" << endl;
+ }
+ else if(number == 6){
+    cout << "Saturday" << endl;
+ }
+ else if(number == 7){
+    cout << "Sunday" << endl;
+ }
+ else{
+     cout << "Invalid input" << endl;
+ }
+ }
 
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
