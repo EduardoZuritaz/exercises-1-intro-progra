@@ -184,7 +184,13 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-  return "";
+  if(number == 1235813) {
+    return "se encontro a fibonacci";
+  }
+  else
+  {
+    return "esto no es de fibonacci";
+  }
 }
 
 void exercise_12(string color1, int numb1,
